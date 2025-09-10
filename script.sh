@@ -1,8 +1,9 @@
 echo "enter number : "
 read num
 fact =1
-for i in {1..num}
+for((i=1 ; i<=$num ; i++))
 do
-  fact=fact*i
-echo "Factorial: $fact"
+  fact=$((fact*i))
 done
+echo "Factorial of $num is : $fact"
+
